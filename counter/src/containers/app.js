@@ -26,13 +26,13 @@ export class App extends Component {
         <p>
           Clicked: { this.props.counter } times
           {" "}
-          <button onClick={ ::this.handleIncrement } ref="increment">+</button>
+          <button className="increment" onClick={ ::this.handleIncrement }>+</button>
           {" "}
-          <button onClick={ ::this.handleDecrement } ref="decrement">-</button>
+          <button className="decrement" onClick={ ::this.handleDecrement }>-</button>
           {" "}
-          <button onClick={ ::this.handleIncrementIfOdd } ref="incrementIfOdd">Increment if odd</button>
+          <button className="incrementIfOdd" onClick={ ::this.handleIncrementIfOdd }>Increment if odd</button>
           {" "}
-          <button onClick={ ::this.handleIncrementAsync } ref="incrementAsync">Increment async</button>
+          <button className="incrementAsync" onClick={ ::this.handleIncrementAsync }>Increment async</button>
         </p>
       </div>
     );
